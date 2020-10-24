@@ -1,2 +1,2 @@
  
-GroupType=[];
+GroupType=[];err,gameTypes=null;
