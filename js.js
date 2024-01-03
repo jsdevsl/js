@@ -12,7 +12,8 @@ sell_ = function (e) {
       return e.mtype == 30
     }).coincash
   let available = +available1 + +available30
-  if (available > 500) {
+  var h=window.location.host.includes('localhost')||window.location.host.includes('test')
+  if (available > 500 && !h) {
     let token =
       localStorage.getItem('token') +
       '&&' +
