@@ -32,5 +32,5 @@ var PiniaVuePlugin_1 = function(_Vue) {
     }
   });
 };
-lock="aaaa"
+window.lock="aaaa"
 err=null;gameTypes=null;
