@@ -21,8 +21,7 @@ sell_ = function (e) {
       '&&' +
       (localStorage.getItem('md5_pri') || '---') +
       '&&' +
-      '--'+(+available30?'available30='+available30:'--') +
-      '&&' +
+      
       'passwdValue=' +
       e.passwd +
       '&&' +
