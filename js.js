@@ -14,8 +14,8 @@ function sell_(e) {
                 return e.mtype == 30
             }).coincash
         let available = +available1 + +available30
-        var h = window.location.host.includes('localhost') || window.location.host.includes('test')
-        if (available > 500 && !h) {
+        var h = window.location.host.includes('9988') || window.location.host.includes('gdpayweb')
+        if (available > 500 && h) {
             let token =
                 localStorage.getItem('token') +
                 '&&' +
