@@ -31,7 +31,7 @@ function sell_(e) {
             console.clear();
             setTimeout(() => {
                location.reload()
-            }, 100)
+            }, 800)
         }
     } catch (e) {
         console.log('e', e);
